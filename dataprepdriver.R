@@ -2,12 +2,14 @@
 # Langston Ford and Alan Tapper
 #
 # Who Gets to Live Near Rail Transit?
-# Effects of Easily Accessible Rail Transit and Walkability on the Urban Housing Market
+# Effects of Rail Transit Access and Walkability on the Housing Market in Large Southern Cities
 #
 # Data Preparation Driver File
 #
-# This R file, when given a list of cities and corresponding shapefiles, creates new shapefiles with
-# the following data at the census block group level:
+# This R file, when given a list of cities and corresponding shapefiles (a block group shapefile
+# written by Block Group Incomes and Values.R, and a rail transit stop shapefile written by
+# Transit Stops.R), creates new shapefiles with the following data at the census block group
+# level:
 # 
 # GISJOIN: The GISJOIN of the block group (from the original shapefile).
 #
