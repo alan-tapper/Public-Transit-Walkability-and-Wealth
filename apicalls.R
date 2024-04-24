@@ -1,12 +1,20 @@
 ####################################################################################################
-# External API Call Wrapper Functions
+# Langston Ford and Alan Tapper
 #
-# These functions are wrapper functions for the api calls we perform.
+# Who Gets to Live Near Rail Transit?
+# Effects of Easily Accessible Rail Transit and Walkability on the Urban Housing Market
+#
+# Data Preparation External API Call Wrapper Functions
+#
+# These functions are wrapper functions for the api calls we perform. They require API keys,
+# which should be stored in the environment at runtime. There is one for Walk Score under the
+# variable name "walkScoreApiKey" and one for the Google APIs under the variable name
+# "googleMapsApiKey".
 ####################################################################################################
 
 # Takes in coordinates and performs reverse geocoding using Google's Geocoding API.
 #
-# For more information visit https://www.walkscore.com/professional/api.php.
+# For more information visit https://developers.google.com/maps/documentation/geocoding.
 reverseGeocode <- function(lat, lng) {
   
   resp <- request(paste0("https://maps.googleapis.com/maps/api/geocode/json?", 
